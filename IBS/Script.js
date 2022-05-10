@@ -1,12 +1,16 @@
-$('section.awSlider .carousel').carousel({
-	pause: "hover",
-  interval: 2000
-});
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
 
-var startImage = $('section.awSlider .item.active > img').attr('src');
-$('section.awSlider').append('<img src="' + startImage + '">');
+let idx = 0;
 
-$('section.awSlider .carousel').on('slid.bs.carousel', function () {
- var bscn = $(this).find('.item.active > img').attr('src');
-	$('section.awSlider > img').attr('src',bscn);
-});
+function carrossel(){
+	idx++;
+
+	if(idx > img.length - 1){
+		idx = 0;	
+	}
+
+	imgs.style.transform = `translateX(${-idx * 880}px)`;
+}
+
+setInterval(carrossel, 6000);
