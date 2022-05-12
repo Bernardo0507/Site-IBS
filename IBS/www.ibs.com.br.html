@@ -1,28 +1,53 @@
-<html>
-      <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="Script.js" defer></script>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="vieowport" content="width=device-width, initial-scale=1.0">
+    <title>Site Igreja Batista do Suá</title>
+    <link rel="stylesheet" href="CSS IBS.css">
+  </head>
+  <body>
+    <!--Slider-->
+    <div class="slider">
 
-    </head>
-    <body>
-      <!-- Cabeçalho do Site -->
-      
-      
+      <div class="slides">
+        <!--Radio Buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <!--Fim Radio Buttons-->
 
-      <!-- Carrocel com imagens -->
-      <div class="carrossel">
-        <div class="container" id="img">
-          <img src="SEJA BEM-VINDO.jpg">
-          <img src="Uma igreja....jpg">
-          <img src="Contribuição.jpg"                             
+        <!--Slide images-->
+        <div class="slide first">
+          <img src="SEJA BEM-VINDO.jpg" alt="image1">          
+        </div>
+        <div class="slide">
+          <img src="Uma igreja....jpg" alt="image2">          
+        </div>
+        <div class="slide">
+          <img src="Contribuição.jpg" alt="image3">          
+        </div>
+        <!--Fim slide image-->
 
+        <!--Navigation auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>  
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>   
 
         </div>
+
       </div>
 
-            
-    </body>
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
 </html>
