@@ -6,6 +6,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #a59696;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -102,5 +104,20 @@ body {
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: rgb(255, 255, 255);
+}
+
+.principal img {
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;    
+}
+
+.menu {
+   float: right;
+   position: absolute;
+   right: 80px;
+   top: 60px;
+   
 }
 
